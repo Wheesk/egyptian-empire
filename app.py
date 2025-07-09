@@ -30,7 +30,7 @@ st.markdown("""
         .main {background-color: #181818;}
         .stButton>button {background-color:#c0b283; color: #222;}
         .stTextInput>div>div>input {background-color:#23272e; color: #f0e9d2;}
-        .chunk-box {background: #26292b; color: #c5f6c5; border-radius: 8px; padding: 8px 16px;}
+        .chunk-box {background: #23392d; color: #c5f6c5; border-radius: 8px; padding: 8px 16px;}
         .answer-box {background: #23392d; color: #c5f6c5; border-radius: 10px; padding: 12px 20px; font-size: 1.08em;}
         /* Make markdown answer text visible and not faded */
         .answer-box p, .answer-box strong, .answer-box span { color: #c5f6c5 !important; }

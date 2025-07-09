@@ -5,6 +5,28 @@ from sentence_transformers import SentenceTransformer
 import openai
 
 # -- Custom CSS for cleaner look --
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .main {
+        background-color: rgba(0,0,0,0.6);  /* Adds a dark overlay for readability */
+        border-radius: 12px;
+        padding: 20px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.markdown("""
     <style>
         .main {background-color: #181818;}

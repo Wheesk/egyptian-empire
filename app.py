@@ -18,15 +18,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown("<h1 style='color: #7c552f; margin-bottom:0;'>Ancient Egypt RAG Q&A</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: #7c552f; margin-bottom:0;'>Ancient Egypt Empire RAG Q&A</h1>", unsafe_allow_html=True)
 st.markdown("<span style='color: #98815b;'>Ask questions about Ancient Egypt and get AI-powered answers, grounded in our PDF knowledge base!</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 # Example question
-EXAMPLE_Q = "Who was Cleopatra VII and why is she famous?"
+EXAMPLE_QUESTIONS = [
+    "Who was Cleopatra VII and why is she famous?",
+    "How did the Nile River influence Ancient Egypt?",
+    "What are pyramids and why were they built?",
+    "Who was Imhotep?",
+    "Describe the process of mummification.",
+    "What was the role of women in Ancient Egyptian society?",
+    "Who was the first king in the Egyptian empire?"
+]
 
-if st.button("Try an example question!"):
-    st.session_state.user_question = EXAMPLE_Q
+st.markdown("#### Need inspiration? Pick an example question:")
+
+# Dropdown selectbox for example questions
+selected_example = st.selectbox(
+    "Choose an example question:",
+    ["Select a question..."] + EXAMPLE_QUESTIONS
+)
+
+if selected_example and selected_example != "Select a question...":
+    st.session_state["user_question"] = selected_example
 
 user_question = st.text_input("Ask a question about Ancient Egypt:", value=st.session_state.get("user_question", ""))
 

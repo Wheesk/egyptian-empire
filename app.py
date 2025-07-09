@@ -7,13 +7,16 @@ import openai
 # -- Custom CSS for cleaner look --
 st.markdown("""
     <style>
-        .main {background-color: #fcfcfc;}
-        .stButton>button {background-color:#e5d8b6;}
-        .stTextInput>div>div>input {background-color:#fff3e6;}
-        .chunk-box {background: #f7f2e5; border-radius: 8px; padding: 8px 16px;}
-        .answer-box {background: #e9fbe5; border-radius: 10px; padding: 12px 20px; font-size: 1.08em;}
+        .main {background-color: #181818;}
+        .stButton>button {background-color:#c0b283; color: #222;}
+        .stTextInput>div>div>input {background-color:#23272e; color: #f0e9d2;}
+        .chunk-box {background: #26292b; color: #e0d7c6; border-radius: 8px; padding: 8px 16px;}
+        .answer-box {background: #23392d; color: #c5f6c5; border-radius: 10px; padding: 12px 20px; font-size: 1.08em;}
+        /* Make markdown answer text visible and not faded */
+        .answer-box p, .answer-box strong, .answer-box span { color: #c5f6c5 !important; }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.markdown("<h1 style='color: #7c552f; margin-bottom:0;'>Ancient Egypt RAG Q&A</h1>", unsafe_allow_html=True)
 st.markdown("<span style='color: #98815b;'>Ask questions about Ancient Egypt and get AI-powered answers, grounded in our PDF knowledge base!</span>", unsafe_allow_html=True)

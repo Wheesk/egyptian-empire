@@ -104,4 +104,4 @@ if user_question:
         st.markdown(f"<div class='answer-box'>{answer}</div>", unsafe_allow_html=True)
 
 st.markdown("---")
-st.markdown("<center><span style='font-size: 0.95em; color: #888;'>Built by [Your Name], powered by Streamlit, FAISS, Sentence Transformers, and OpenAI GPT-3.5.</span></center>", unsafe_allow_html=True)
+st.markdown("<center><span style='font-size: 0.95em; color: #888;'>Built by Wheesk, powered by Streamlit, FAISS, Sentence Transformers, and OpenAI GPT-3.5.</span></center>", unsafe_allow_html=True)

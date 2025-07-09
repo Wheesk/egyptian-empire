@@ -38,7 +38,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown("<h1 style='color: #7c552f; margin-bottom:0;'>Ancient Egypt Empire RAG Q&A</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: #D5BABA; margin-bottom:0;'>Ancient Egypt Empire RAG Q&A</h1>", unsafe_allow_html=True)
 st.markdown("<span style='color: #98815b;'>Ask questions about Ancient Egypt and get AI-powered answers, grounded in our PDF knowledge base!</span>", unsafe_allow_html=True)
 st.markdown("---")
 

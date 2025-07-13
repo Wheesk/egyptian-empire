@@ -39,12 +39,11 @@ chunks = create_chunks(paragraphs)
 for i, chunk in enumerate(chunks[:5]):
     print(f"\n-- Chunk {i+1} ---\n{chunk[:500]}...\n")
 
-print(f"\n✅ Total chunks created: {len(chunks)}")
+print(f"\n Total chunks created: {len(chunks)}")
 
 import pickle
 
-# Only run this after you’ve confirmed chunks are created (e.g. 31 chunks)
 with open("chunks.pkl", "wb") as f:
     pickle.dump(chunks, f)
 
-print("✅ chunks.pkl saved successfully.")
+print("chunks.pkl saved successfully.")
